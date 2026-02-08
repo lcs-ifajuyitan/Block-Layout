@@ -9,7 +9,15 @@ import SwiftUI
 
 struct ContentView2: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Rectangle()
+            HStack{
+                Rectangle()
+                Rectangle()
+                Rectangle()
+            }
+            .containerRelativeFrame(.vertical, count: 3, span: 2, spacing: 0)
+        }
     }
 }
 
