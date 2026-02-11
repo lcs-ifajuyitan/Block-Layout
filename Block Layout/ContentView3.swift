@@ -9,19 +9,23 @@ import SwiftUI
 
 struct ContentView3: View {
     var body: some View {
-        HStack{
-            Rectangle()
-                .containerRelativeFrame(.vertical, count: 3, span: 1, spacing: 0)
-            Rectangle()
-                .containerRelativeFrame(.vertical, count: 3, span: 2, spacing: 0)
-        }
+        
         HStack {
-            Rectangle()
-                .containerRelativeFrame(.vertical, count: 3, span: 2, spacing: 0)
-            Rectangle()
-                .containerRelativeFrame(.vertical, count: 3, span: 1, spacing: 0)
-            
+            VStack{
+                Rectangle()
+                    .containerRelativeFrame(.vertical, count: 3, span: 1, spacing: 0)
+                Rectangle()
+                    .containerRelativeFrame(.vertical, count: 3, span: 2, spacing: 0)
+            }
+            VStack {
+                Rectangle()
+                    .containerRelativeFrame(.vertical, count: 3, span: 2, spacing: 0)
+                Rectangle()
+                    .containerRelativeFrame(.vertical, count: 3, span: 1, spacing: 0)
+                
+            }
         }
+        
         
     }
 }
